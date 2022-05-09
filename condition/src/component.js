@@ -1,36 +1,17 @@
-import React from "react"
+import React from "react";
 
+const component = (props) => {
+  // const onSubmitHandler = (props) => {
+  //   console.log(" OnSubmit handler from the componet is call out")
+  //   props.vaishanvi()
+  // }
 
-const selection = "netflix"
+  return (
+    <div>
+      <h1> It is Component</h1>
+      <button onClick={props.vaishanvi}> Component Button </button>
+    </div>
+  );
+};
 
-
-const Component = () => {
-    
-  return    selection === "netflix" ? `You  are on netflix` : ` You are on other online platform` 
-}
-
-
-
-// condition
-// 1]selection === "vaishnavi"
-// 2]selection === "amazon"
-// 3] selection === "netflix"
-
-// const Component = () => {
-//     if (selection === "vaishnavi") {
-//         return ` you are now on netflix`
-//     } else {
-//         return ` you are now on amazon`
-//     }
-
-//     return (
-//         <div> Conditional statement - if else statement</div>
-        
-        
-//     )
-// }
-
-
-
-
-export default Component
+export default component;
